@@ -16,12 +16,13 @@ from pathlib import Path
 import pandas as pd
 
 DATA_DIRECTORY = Path(__file__).resolve().parent.parent / "data"
-BATTLES_PER_PAIRING = 20  # pro Paarung mehrfach kaempfen -> Gewinn-Wahrscheinlichkeit
+BATTLES_PER_PAIRING = 20  
 POKEMON_LEVEL = 50
 MOVE_BASE_POWER = 80  # jedes Pokémon hat pro eigenem Typ eine Attacke dieser Staerke
-SAME_TYPE_ATTACK_BONUS = 1.5  # STAB: Attacke vom eigenen Typ macht mehr Schaden
-CRITICAL_HIT_DAMAGE_MULTIPLIER = 2.0
-MAXIMUM_TURNS = 300  # Notbremse gegen Paarungen, die sich gegenseitig kaum schaden
+STAB = 1.5  
+CRIT_CHANCE = 1 / 16  
+CRIT_MULTIPLIER = 2.0
+MAX_TURNS = 300  # Notbremse gegen Paarungen, die sich gegenseitig kaum schaden
 RANDOM_SEED = 42  # feste Zahl -> jeder Lauf erzeugt dieselben Daten (reproduzierbar)
 
 # In Gen 1 haengt es NICHT von der Attacke ab, ob sie physisch oder speziell ist,
@@ -72,28 +73,25 @@ def calculate_type_effectiveness(
     return total_multiplier
 
 
-def calculate_damage(
+def calculate_base_damage(
     attacking_pokemon: dict,
     defending_pokemon: dict,
     move_type: str,
     type_effectiveness_chart: dict,
-    random_generator: random.Random,
-) -> int:
+) -> float:
     """
-    Schadensformel, angelehnt an die der Spiele.
-
-    Der Zufall steckt an zwei Stellen:
-      - Schadensstreuung: jeder Treffer macht 85-100 % des Grundschadens
-      - Kritischer Treffer: verdoppelt den Schaden, Chance haengt vom Speed ab (wie in Gen 1)
+    Schadensformel der Spiele, OHNE Zufall
     """
     type_multiplier = calculate_type_effectiveness(
         move_type, defending_pokemon["types"], type_effectiveness_chart
     )
 
-    # Immun -> gar kein Schaden, dann koennen wir uns den Rest sparen.
+   
     if type_multiplier == 0.0:
-        return 0
+        return 0.0
 
+    # In Gen 1 entscheidet allein der Typ der Attacke, ob sie physisch oder
+    
     if move_type in PHYSICAL_TYPES:
         attack_value = calculate_stat_at_level(attacking_pokemon["attack"])
         defense_value = calculate_stat_at_level(defending_pokemon["defense"])
@@ -106,14 +104,36 @@ def calculate_damage(
     ) + 2
 
     if move_type in attacking_pokemon["types"]:
-        base_damage *= SAME_TYPE_ATTACK_BONUS
+        base_damage *= STAB
 
-    base_damage *= type_multiplier
+    return base_damage * type_multiplier
 
-    # Kritischer Treffer: in Gen 1 haengt die Chance am Basis-Speed des Angreifers.
-    critical_hit_chance = min(attacking_pokemon["speed"] / 512, 0.9)
-    if random_generator.random() < critical_hit_chance:
-        base_damage *= CRITICAL_HIT_DAMAGE_MULTIPLIER
+
+def calculate_damage(
+    attacking_pokemon: dict,
+    defending_pokemon: dict,
+    move_type: str,
+    type_effectiveness_chart: dict,
+    random_generator: random.Random,
+) -> int:
+    """
+    Der Schaden eines einzelnen Treffers, inklusive Zufall:
+      - Kritischer Treffer: feste Chance von 1/16, verdoppelt den Schaden
+      - Schadensstreuung: jeder Treffer macht 85-100 % des Grundschadens
+
+    Die feste Krit-Chance ist bewusst die der neueren Spiele. In Gen 1 haette sie
+    am Speed des Angreifers gehangen, was schnelle Pokémon zusaetzlich bevorteilt
+    haette - Speed ist ohnehin schon ein Feature des Modells.
+    """
+    base_damage = calculate_base_damage(
+        attacking_pokemon, defending_pokemon, move_type, type_effectiveness_chart
+    )
+
+    if base_damage == 0.0:
+        return 0
+
+    if random_generator.random() < CRIT_CHANCE:
+        base_damage *= CRIT_MULTIPLIER
 
     base_damage *= random_generator.uniform(0.85, 1.0)
 
@@ -125,13 +145,18 @@ def choose_best_move_type(
     attacking_pokemon: dict, defending_pokemon: dict, type_effectiveness_chart: dict
 ) -> str:
     """
-    Jedes Pokémon hat pro eigenem Typ eine Attacke und waehlt die wirksamste davon.
-    Vereinfachung: es entscheidet nur nach Typ-Effektivitaet, nicht nach seinen Stats.
+    Jedes Pokémon hat pro eigenem Typ eine Attacke und waehlt die, die tatsaechlich
+    am meisten Schaden macht.
+
+    Bewusst nach SCHADEN und nicht nur nach Typ-Effektivitaet: Gengar (Geist/Gift)
+    hat gegen Alakazam mit Geist zwar den besseren Multiplikator (2x statt 1x), aber
+    Geist ist in Gen 1 physisch und Gengars Angriff ist mies - seine speziell
+    berechnete Gift-Attacke macht aus dem starken Spezial-Angriff mehr Schaden.
     """
     return max(
         attacking_pokemon["types"],
-        key=lambda move_type: calculate_type_effectiveness(
-            move_type, defending_pokemon["types"], type_effectiveness_chart
+        key=lambda move_type: calculate_base_damage(
+            attacking_pokemon, defending_pokemon, move_type, type_effectiveness_chart
         ),
     )
 
@@ -147,11 +172,11 @@ def simulate_single_battle(
 
     Ablauf: Der Schnellere greift zuerst an, dann abwechselnd, bis einer bei 0 KP ist.
     """
-    first_maximum_hit_points = calculate_hit_points_at_level(first_pokemon["hit_points"])
-    second_maximum_hit_points = calculate_hit_points_at_level(second_pokemon["hit_points"])
+    first_maximum_hp = calculate_hit_points_at_level(first_pokemon["hit_points"])
+    second_maximum_hp = calculate_hit_points_at_level(second_pokemon["hit_points"])
 
-    first_remaining_hit_points = first_maximum_hit_points
-    second_remaining_hit_points = second_maximum_hit_points
+    first_remaining_hp = first_maximum_hp
+    second_remaining_hp = second_maximum_hp
 
     first_move_type = choose_best_move_type(first_pokemon, second_pokemon, type_effectiveness_chart)
     second_move_type = choose_best_move_type(second_pokemon, first_pokemon, type_effectiveness_chart)
@@ -164,40 +189,40 @@ def simulate_single_battle(
     else:
         first_pokemon_attacks_first = random_generator.random() < 0.5
 
-    for _ in range(MAXIMUM_TURNS):
+    for _ in range(MAX_TURNS):
         if first_pokemon_attacks_first:
-            second_remaining_hit_points -= calculate_damage(
+            second_remaining_hp -= calculate_damage(
                 first_pokemon, second_pokemon, first_move_type,
                 type_effectiveness_chart, random_generator,
             )
-            if second_remaining_hit_points <= 0:
+            if second_remaining_hp <= 0:
                 return True
 
-            first_remaining_hit_points -= calculate_damage(
+            first_remaining_hp -= calculate_damage(
                 second_pokemon, first_pokemon, second_move_type,
                 type_effectiveness_chart, random_generator,
             )
-            if first_remaining_hit_points <= 0:
+            if first_remaining_hp <= 0:
                 return False
         else:
-            first_remaining_hit_points -= calculate_damage(
+            first_remaining_hp -= calculate_damage(
                 second_pokemon, first_pokemon, second_move_type,
                 type_effectiveness_chart, random_generator,
             )
-            if first_remaining_hit_points <= 0:
+            if first_remaining_hp <= 0:
                 return False
 
-            second_remaining_hit_points -= calculate_damage(
+            second_remaining_hp -= calculate_damage(
                 first_pokemon, second_pokemon, first_move_type,
                 type_effectiveness_chart, random_generator,
             )
-            if second_remaining_hit_points <= 0:
+            if second_remaining_hp <= 0:
                 return True
 
     # Nach MAXIMUM_TURNS immer noch kein KO (beide sind gegen den anderen immun):
     # Es gewinnt, wer prozentual mehr KP uebrig hat.
-    first_hit_points_fraction = first_remaining_hit_points / first_maximum_hit_points
-    second_hit_points_fraction = second_remaining_hit_points / second_maximum_hit_points
+    first_hit_points_fraction = first_remaining_hp / first_maximum_hp
+    second_hit_points_fraction = second_remaining_hp / second_maximum_hp
     return first_hit_points_fraction >= second_hit_points_fraction
 
 
@@ -209,9 +234,7 @@ def simulate_all_battles(pokemon_list: list[dict], type_effectiveness_chart: dic
     random_generator = random.Random(RANDOM_SEED)
     battle_results = []
 
-    # permutations statt combinations: (Glurak, Turtok) und (Turtok, Glurak) sind
-    # beide dabei. Kostet doppelt so viele Zeilen, aber das Modell lernt so beide
-    # Blickrichtungen und wird nicht auf eine Reihenfolge trainiert.
+   
     all_pairings = list(permutations(pokemon_list, 2))
 
     for pairing_index, (first_pokemon, second_pokemon) in enumerate(all_pairings, start=1):
@@ -239,7 +262,7 @@ def simulate_all_battles(pokemon_list: list[dict], type_effectiveness_chart: dic
         )
 
         if pairing_index % 2000 == 0:
-            print(f"[{pairing_index:5d}/{len(all_pairings)}] Paarungen simuliert")
+            print(f"[{pairing_index}/{len(all_pairings)}] Paarungen simuliert")
 
     return pd.DataFrame(battle_results)
 
