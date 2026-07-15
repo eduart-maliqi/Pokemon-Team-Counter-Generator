@@ -1,8 +1,6 @@
 """
 Holt die Basis-Daten der 151 Gen-1-Pokémon von der PokéAPI und speichert sie
 zusammen mit der Typ-Effektivitaets-Tabelle als JSON im Ordner ../data/.
-
-Aufruf:  python data-collection/fetch_pokemon.py
 """
 
 import json
@@ -12,10 +10,10 @@ from pathlib import Path
 import requests
 
 POKEAPI_BASE_URL = "https://pokeapi.co/api/v2"
-GENERATION_ONE_POKEMON_COUNT = 151
-TARGET_GENERATION_NUMBER = 1  # Gen 1 (Rot/Blau/Gelb)
+GEN_ONE_POKEMON_COUNT = 151
+TARGET_GENERATION_NUMBER = 1  
 DATA_DIRECTORY = Path(__file__).resolve().parent.parent / "data"
-REQUEST_DELAY_SECONDS = 0.2  # freundlich zur API bleiben
+REQUEST_DELAY_SECONDS = 0.2  # sonst kommt vllt sperre
 
 # Reihenfolge der Generationen, um "generation-v" in eine Zahl zu uebersetzen.
 GENERATION_NAMES_IN_ORDER = [
@@ -92,10 +90,10 @@ def fetch_single_pokemon(pokemon_id: int) -> dict:
 def fetch_all_pokemon() -> list[dict]:
     """Laedt alle 151 Gen-1-Pokémon nacheinander."""
     all_pokemon = []
-    for pokemon_id in range(1, GENERATION_ONE_POKEMON_COUNT + 1):
+    for pokemon_id in range(1, GEN_ONE_POKEMON_COUNT + 1):
         pokemon = fetch_single_pokemon(pokemon_id)
         all_pokemon.append(pokemon)
-        print(f"[{pokemon_id:3d}/{GENERATION_ONE_POKEMON_COUNT}] {pokemon['name']}")
+        print(f"[{pokemon_id:3d}/{GEN_ONE_POKEMON_COUNT}] {pokemon['name']}")
         time.sleep(REQUEST_DELAY_SECONDS)
     return all_pokemon
 
@@ -108,7 +106,7 @@ def fetch_type_effectiveness_chart(all_pokemon: list[dict]) -> dict:
 
     Hinweis: Die PokéAPI liefert die HEUTIGEN Typ-Beziehungen, nicht die von Gen 1.
     Bewusst akzeptiert. Bekannte Abweichungen gegenueber Gen 1:
-      - Geist gegen Psycho: heute 2.0, in Gen 1 war es 0.0
+      - Geist gegen Psycho: heute 2.0, in Gen 1 war es 0.0 (wegen einem coding fehler)
       - Kaefer gegen Gift:   heute 0.5, in Gen 1 war es 2.0
       - Gift gegen Kaefer:   heute 1.0, in Gen 1 war es 2.0
     """

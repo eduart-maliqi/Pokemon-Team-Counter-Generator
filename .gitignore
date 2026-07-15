@@ -6,3 +6,7 @@ dist/
 .env
 CLAUDE.md
 .claude/
+
+# Reproduzierbare Zwischenergebnisse: entstehen in Sekunden neu aus Code + Rohdaten
+ml-training/model.pkl
+data/features.csv
