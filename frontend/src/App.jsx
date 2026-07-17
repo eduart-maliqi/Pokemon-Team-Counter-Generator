@@ -69,8 +69,8 @@ export default function App() {
       <header className="app-header">
         <h1>Pokémon Team Counter Generator</h1>
         <p className="subtitle">
-          Waehle bis zu sechs gegnerische Pokémon &ndash; das Modell schlaegt dein
-          Konter-Team vor.
+          Choose up to six opposing Pokémon &ndash; the model suggests your
+          counter team.
         </p>
       </header>
 
@@ -78,7 +78,7 @@ export default function App() {
 
       <section className="panel">
         <div className="panel-title">
-          Dein Gegner-Team &nbsp;({selectedIds.length}/{MAXIMUM_TEAM_SIZE})
+          Your opponent team &nbsp;({selectedIds.length}/{MAXIMUM_TEAM_SIZE})
         </div>
 
         <div className="selected-row">
@@ -90,7 +90,7 @@ export default function App() {
                   <button
                     className="slot-filled"
                     onClick={() => togglePokemon(pokemon.pokemon_id)}
-                    title="Entfernen"
+                    title="Remove"
                   >
                     <img src={pokemon.sprite_url} alt={pokemon.name} />
                     <span>{formatName(pokemon.name)}</span>
@@ -108,18 +108,18 @@ export default function App() {
           disabled={selectedIds.length === 0 || isGenerating}
           onClick={handleGenerate}
         >
-          {isGenerating ? "Berechne ..." : "Konter-Team generieren"}
+          {isGenerating ? "Calculating ..." : "Generate counter team"}
         </button>
       </section>
 
       {counterTeam.length > 0 && (
         <section className="panel">
-          <div className="panel-title">Dein Konter-Team</div>
+          <div className="panel-title">Your counter team</div>
           <div className="counter-grid">
             {counterTeam.map((entry) => (
               <div key={entry.opponent.pokemon_id} className="counter-card">
                 <div className="versus">
-                  <span className="versus-label">gegen</span>
+                  <span className="versus-label">against</span>
                   <strong>{formatName(entry.opponent.name)}</strong>
                 </div>
                 <img
@@ -142,7 +142,7 @@ export default function App() {
                   />
                 </div>
                 <div className="win-label">
-                  {Math.round(entry.win_probability * 100)}% Siegchance
+                  {Math.round(entry.win_probability * 100)}% model confidence
                 </div>
               </div>
             ))}
@@ -151,11 +151,11 @@ export default function App() {
       )}
 
       <section className="panel">
-        <div className="panel-title">Pokémon auswaehlen</div>
+        <div className="panel-title">Choose Pokémon</div>
         <input
           className="search-input"
           type="text"
-          placeholder="Suchen ..."
+          placeholder="Search ..."
           value={searchText}
           onChange={(event) => setSearchText(event.target.value)}
         />
@@ -185,8 +185,8 @@ export default function App() {
       </section>
 
       <footer className="app-footer">
-        Random-Forest-Modell auf simulierten Gen-1-Kaempfen &middot; freiwilliges
-        Sommerprojekt
+        Random forest model on simulated Gen 1 battles &middot; voluntary summer
+        project
       </footer>
     </div>
   );

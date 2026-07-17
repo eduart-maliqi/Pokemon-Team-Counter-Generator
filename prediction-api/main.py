@@ -70,14 +70,14 @@ def counter_team(request: CounterTeamRequest) -> dict:
     """
     if not 1 <= len(request.opponent_pokemon_ids) <= 6:
         raise HTTPException(
-            status_code=400, detail="Bitte 1 bis 6 gegnerische Pokémon angeben."
+            status_code=400, detail="Please provide 1 to 6 opposing Pokémon."
         )
 
     opponent_team = []
     for opponent_id in request.opponent_pokemon_ids:
         if opponent_id not in pokemon_by_id:
             raise HTTPException(
-                status_code=400, detail=f"Unbekannte Pokémon-ID: {opponent_id} (gueltig: 1-151)."
+                status_code=400, detail=f"Unknown Pokémon ID: {opponent_id} (valid: 1-151)."
             )
         opponent_team.append(pokemon_by_id[opponent_id])
 
