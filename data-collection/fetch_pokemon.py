@@ -11,7 +11,7 @@ import requests
 
 POKEAPI_BASE_URL = "https://pokeapi.co/api/v2"
 GEN_ONE_POKEMON_COUNT = 151
-TARGET_GENERATION_NUMBER = 1  
+TARGET_GENERATION_NUMBER = 1
 DATA_DIRECTORY = Path(__file__).resolve().parent.parent / "data"
 REQUEST_DELAY_SECONDS = 0.2  # sonst kommt vllt sperre
 
@@ -27,6 +27,26 @@ GENERATION_NAMES_IN_ORDER = [
     "generation-viii",
     "generation-ix",
 ]
+
+# Die 15 Typen, die es in Gen 1 gab. Attacken mit Typen, die es damals nicht gab
+# (Unlicht, Stahl, Fee), werden aussortiert.
+GEN_ONE_TYPE_NAMES = {
+    "normal", "fighting", "flying", "poison", "ground", "rock", "bug", "ghost",
+    "fire", "water", "grass", "electric", "psychic", "ice", "dragon",
+}
+
+# Nur Attacken, die in einem dieser Spiele lernbar waren, zaehlen als Gen-1-Attacke.
+GEN_ONE_VERSION_GROUPS = {"red-blue", "yellow"}
+
+# Attacken, die zwar Schaden machen, aber einen grossen Nachteil haben, den die
+# Simulation NICHT abbildet: Finteattacke und Explosion lassen den Anwender selbst
+# K.o. gehen. Ohne diesen Nachteil wuerde die Attackenwahl sie immer bevorzugen
+# (Staerke 200) und die Simulation verzerren - darum aussortiert.
+EXCLUDED_MOVE_NAMES = {"self-destruct", "explosion"}
+
+# Notfall-Attacke fuer Pokémon, die in Gen 1 gar keine Schadensattacke lernen
+# konnten (z.B. Metapod, Kokuna). Angelehnt an "Verzweifler".
+FALLBACK_MOVE = {"name": "struggle", "type": "normal", "power": 50}
 
 
 def extract_generation_one_types(raw_pokemon: dict) -> list[str]:
@@ -62,7 +82,79 @@ def extract_generation_one_types(raw_pokemon: dict) -> list[str]:
     return [type_entry["type"]["name"] for type_entry in raw_pokemon["types"]]
 
 
-def fetch_single_pokemon(pokemon_id: int) -> dict:
+def is_learnable_in_generation_one(move_entry: dict) -> bool:
+    """True, wenn die Attacke in Rot/Blau oder Gelb lernbar war."""
+    return any(
+        detail["version_group"]["name"] in GEN_ONE_VERSION_GROUPS
+        for detail in move_entry["version_group_details"]
+    )
+
+
+def fetch_move_details(move_name: str, move_cache: dict) -> dict | None:
+    """
+    Laedt Typ, Staerke und Schadensklasse einer Attacke (mit Cache, damit jede
+    Attacke nur einmal geholt wird).
+
+    Gibt None zurueck, wenn die Attacke keinen Schaden macht (Statusattacke ohne
+    Staerke) oder einen Typ hat, den es in Gen 1 nicht gab.
+    """
+    if move_name in move_cache:
+        return move_cache[move_name]
+
+    if move_name in EXCLUDED_MOVE_NAMES:
+        move_cache[move_name] = None
+        return None
+
+    response = requests.get(f"{POKEAPI_BASE_URL}/move/{move_name}", timeout=30)
+    response.raise_for_status()
+    raw_move = response.json()
+    time.sleep(REQUEST_DELAY_SECONDS)
+
+    power = raw_move["power"]
+    move_type = raw_move["type"]["name"]
+    damage_class = raw_move["damage_class"]["name"]  # physical / special / status
+
+    # Nur Attacken behalten, die wirklich Schaden machen (Staerke > 0, keine
+    # Statusattacke) und einen Gen-1-Typ haben.
+    if power and damage_class != "status" and move_type in GEN_ONE_TYPE_NAMES:
+        move = {"name": move_name, "type": move_type, "power": power}
+    else:
+        move = None
+
+    move_cache[move_name] = move
+    return move
+
+
+def extract_best_damaging_moves(raw_pokemon: dict, move_cache: dict) -> list[dict]:
+    """
+    Liefert pro Attacken-Typ die staerkste Gen-1-Schadensattacke des Pokémon.
+
+    Warum nur die staerkste pro Typ: Bei gleichem Typ gewinnt fuer den Schaden
+    immer die hoehere Staerke (STAB und Typ-Effektivitaet sind identisch). So
+    bleibt die Datei klein, ohne dass Information verloren geht - die Typ-Abdeckung
+    bleibt vollstaendig (Relaxo behaelt so z.B. sein Erdbeben als Boden-Attacke).
+    """
+    strongest_move_per_type: dict[str, dict] = {}
+
+    for move_entry in raw_pokemon["moves"]:
+        if not is_learnable_in_generation_one(move_entry):
+            continue
+
+        move = fetch_move_details(move_entry["move"]["name"], move_cache)
+        if move is None:
+            continue
+
+        current_best = strongest_move_per_type.get(move["type"])
+        if current_best is None or move["power"] > current_best["power"]:
+            strongest_move_per_type[move["type"]] = move
+
+    if not strongest_move_per_type:
+        return [dict(FALLBACK_MOVE)]
+
+    return list(strongest_move_per_type.values())
+
+
+def fetch_single_pokemon(pokemon_id: int, move_cache: dict) -> dict:
     """Lädt ein einzelnes Pokémon und reduziert es auf die Felder, die es braucht."""
     response = requests.get(f"{POKEAPI_BASE_URL}/pokemon/{pokemon_id}", timeout=30)
     response.raise_for_status()
@@ -84,16 +176,19 @@ def fetch_single_pokemon(pokemon_id: int) -> dict:
         "special_defense": base_stats["special-defense"],
         "speed": base_stats["speed"],
         "sprite_url": raw_pokemon["sprites"]["front_default"],
+        "moves": extract_best_damaging_moves(raw_pokemon, move_cache),
     }
 
 
 def fetch_all_pokemon() -> list[dict]:
     """Laedt alle 151 Gen-1-Pokémon nacheinander."""
     all_pokemon = []
+    move_cache: dict = {}  # jede Attacke nur einmal von der API holen
     for pokemon_id in range(1, GEN_ONE_POKEMON_COUNT + 1):
-        pokemon = fetch_single_pokemon(pokemon_id)
+        pokemon = fetch_single_pokemon(pokemon_id, move_cache)
         all_pokemon.append(pokemon)
-        print(f"[{pokemon_id:3d}/{GEN_ONE_POKEMON_COUNT}] {pokemon['name']}")
+        print(f"[{pokemon_id:3d}/{GEN_ONE_POKEMON_COUNT}] {pokemon['name']:12s} "
+              f"({len(pokemon['moves'])} Attacken-Typen)")
         time.sleep(REQUEST_DELAY_SECONDS)
     return all_pokemon
 

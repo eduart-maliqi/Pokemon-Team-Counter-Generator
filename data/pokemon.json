@@ -12,7 +12,19 @@
     "special_attack": 65,
     "special_defense": 65,
     "speed": 45,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      }
+    ]
   },
   {
     "pokemon_id": 2,
@@ -27,7 +39,19 @@
     "special_attack": 80,
     "special_defense": 80,
     "speed": 60,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      }
+    ]
   },
   {
     "pokemon_id": 3,
@@ -42,7 +66,19 @@
     "special_attack": 100,
     "special_defense": 100,
     "speed": 80,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      }
+    ]
   },
   {
     "pokemon_id": 4,
@@ -56,7 +92,29 @@
     "special_attack": 60,
     "special_defense": 50,
     "speed": 65,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 5,
@@ -70,7 +128,29 @@
     "special_attack": 80,
     "special_defense": 65,
     "speed": 80,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 6,
@@ -85,7 +165,34 @@
     "special_attack": 109,
     "special_defense": 85,
     "speed": 100,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "fly",
+        "type": "flying",
+        "power": 90
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      }
+    ]
   },
   {
     "pokemon_id": 7,
@@ -99,7 +206,34 @@
     "special_attack": 50,
     "special_defense": 64,
     "speed": 43,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 8,
@@ -113,7 +247,34 @@
     "special_attack": 65,
     "special_defense": 80,
     "speed": 58,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 9,
@@ -127,7 +288,34 @@
     "special_attack": 85,
     "special_defense": 105,
     "speed": 78,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      }
+    ]
   },
   {
     "pokemon_id": 10,
@@ -141,7 +329,14 @@
     "special_attack": 20,
     "special_defense": 20,
     "speed": 45,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+    "moves": [
+      {
+        "name": "tackle",
+        "type": "normal",
+        "power": 40
+      }
+    ]
   },
   {
     "pokemon_id": 11,
@@ -155,7 +350,14 @@
     "special_attack": 25,
     "special_defense": 25,
     "speed": 30,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+    "moves": [
+      {
+        "name": "struggle",
+        "type": "normal",
+        "power": 50
+      }
+    ]
   },
   {
     "pokemon_id": 12,
@@ -170,7 +372,29 @@
     "special_attack": 90,
     "special_defense": 80,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "gust",
+        "type": "flying",
+        "power": 40
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      }
+    ]
   },
   {
     "pokemon_id": 13,
@@ -185,7 +409,14 @@
     "special_attack": 20,
     "special_defense": 20,
     "speed": 50,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+    "moves": [
+      {
+        "name": "poison-sting",
+        "type": "poison",
+        "power": 15
+      }
+    ]
   },
   {
     "pokemon_id": 14,
@@ -200,7 +431,14 @@
     "special_attack": 25,
     "special_defense": 25,
     "speed": 35,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+    "moves": [
+      {
+        "name": "struggle",
+        "type": "normal",
+        "power": 50
+      }
+    ]
   },
   {
     "pokemon_id": 15,
@@ -215,7 +453,24 @@
     "special_attack": 45,
     "special_defense": 80,
     "speed": 75,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "twineedle",
+        "type": "bug",
+        "power": 25
+      },
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      }
+    ]
   },
   {
     "pokemon_id": 16,
@@ -230,7 +485,19 @@
     "special_attack": 35,
     "special_defense": 35,
     "speed": 56,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      }
+    ]
   },
   {
     "pokemon_id": 17,
@@ -245,7 +512,19 @@
     "special_attack": 50,
     "special_defense": 50,
     "speed": 71,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      }
+    ]
   },
   {
     "pokemon_id": 18,
@@ -260,7 +539,19 @@
     "special_attack": 70,
     "special_defense": 70,
     "speed": 101,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      }
+    ]
   },
   {
     "pokemon_id": 19,
@@ -274,7 +565,34 @@
     "special_attack": 25,
     "special_defense": 35,
     "speed": 72,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 20,
@@ -288,7 +606,34 @@
     "special_attack": 50,
     "special_defense": 70,
     "speed": 97,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 21,
@@ -303,7 +648,19 @@
     "special_attack": 31,
     "special_defense": 31,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      }
+    ]
   },
   {
     "pokemon_id": 22,
@@ -318,7 +675,19 @@
     "special_attack": 61,
     "special_defense": 61,
     "speed": 100,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      }
+    ]
   },
   {
     "pokemon_id": 23,
@@ -332,7 +701,34 @@
     "special_attack": 40,
     "special_defense": 54,
     "speed": 55,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "acid",
+        "type": "poison",
+        "power": 40
+      },
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 24,
@@ -346,7 +742,34 @@
     "special_attack": 65,
     "special_defense": 79,
     "speed": 80,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "acid",
+        "type": "poison",
+        "power": 40
+      },
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 25,
@@ -360,7 +783,29 @@
     "special_attack": 50,
     "special_defense": 50,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 26,
@@ -374,7 +819,24 @@
     "special_attack": 90,
     "special_defense": 80,
     "speed": 110,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 27,
@@ -388,7 +850,34 @@
     "special_attack": 20,
     "special_defense": 30,
     "speed": 40,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "poison-sting",
+        "type": "poison",
+        "power": 15
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 28,
@@ -402,7 +891,34 @@
     "special_attack": 45,
     "special_defense": 55,
     "speed": 65,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "poison-sting",
+        "type": "poison",
+        "power": 15
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 29,
@@ -416,7 +932,34 @@
     "special_attack": 40,
     "special_defense": 40,
     "speed": 41,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "double-kick",
+        "type": "fighting",
+        "power": 30
+      },
+      {
+        "name": "poison-sting",
+        "type": "poison",
+        "power": 15
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 30,
@@ -430,7 +973,39 @@
     "special_attack": 55,
     "special_defense": 55,
     "speed": 56,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "double-kick",
+        "type": "fighting",
+        "power": 30
+      },
+      {
+        "name": "poison-sting",
+        "type": "poison",
+        "power": 15
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 31,
@@ -445,7 +1020,54 @@
     "special_attack": 75,
     "special_defense": 85,
     "speed": 76,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "poison-sting",
+        "type": "poison",
+        "power": 15
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 32,
@@ -459,7 +1081,34 @@
     "special_attack": 40,
     "special_defense": 40,
     "speed": 50,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
+    "moves": [
+      {
+        "name": "double-kick",
+        "type": "fighting",
+        "power": 30
+      },
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "poison-sting",
+        "type": "poison",
+        "power": 15
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 33,
@@ -473,7 +1122,39 @@
     "special_attack": 55,
     "special_defense": 55,
     "speed": 65,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+    "moves": [
+      {
+        "name": "double-kick",
+        "type": "fighting",
+        "power": 30
+      },
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "poison-sting",
+        "type": "poison",
+        "power": 15
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 34,
@@ -488,7 +1169,54 @@
     "special_attack": 85,
     "special_defense": 75,
     "speed": 85,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "poison-sting",
+        "type": "poison",
+        "power": 15
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 35,
@@ -502,7 +1230,49 @@
     "special_attack": 60,
     "special_defense": 65,
     "speed": 35,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 36,
@@ -516,7 +1286,49 @@
     "special_attack": 95,
     "special_defense": 90,
     "speed": 60,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 37,
@@ -530,7 +1342,24 @@
     "special_attack": 50,
     "special_defense": 65,
     "speed": 65,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 38,
@@ -544,7 +1373,24 @@
     "special_attack": 81,
     "special_defense": 100,
     "speed": 100,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 39,
@@ -558,7 +1404,49 @@
     "special_attack": 45,
     "special_defense": 25,
     "speed": 20,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 40,
@@ -572,7 +1460,49 @@
     "special_attack": 85,
     "special_defense": 50,
     "speed": 45,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 41,
@@ -587,7 +1517,29 @@
     "special_attack": 30,
     "special_defense": 40,
     "speed": 55,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "wing-attack",
+        "type": "flying",
+        "power": 60
+      },
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      },
+      {
+        "name": "leech-life",
+        "type": "bug",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 42,
@@ -602,7 +1554,29 @@
     "special_attack": 65,
     "special_defense": 75,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "wing-attack",
+        "type": "flying",
+        "power": 60
+      },
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      },
+      {
+        "name": "leech-life",
+        "type": "bug",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 43,
@@ -617,7 +1591,24 @@
     "special_attack": 75,
     "special_defense": 65,
     "speed": 30,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "acid",
+        "type": "poison",
+        "power": 40
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      }
+    ]
   },
   {
     "pokemon_id": 44,
@@ -632,7 +1623,24 @@
     "special_attack": 85,
     "special_defense": 75,
     "speed": 40,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "acid",
+        "type": "poison",
+        "power": 40
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      }
+    ]
   },
   {
     "pokemon_id": 45,
@@ -647,7 +1655,24 @@
     "special_attack": 110,
     "special_defense": 90,
     "speed": 50,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "acid",
+        "type": "poison",
+        "power": 40
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      }
+    ]
   },
   {
     "pokemon_id": 46,
@@ -662,7 +1687,29 @@
     "special_attack": 45,
     "special_defense": 55,
     "speed": 25,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      },
+      {
+        "name": "leech-life",
+        "type": "bug",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 47,
@@ -677,7 +1724,29 @@
     "special_attack": 60,
     "special_defense": 80,
     "speed": 30,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      },
+      {
+        "name": "leech-life",
+        "type": "bug",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 48,
@@ -692,7 +1761,29 @@
     "special_attack": 40,
     "special_defense": 55,
     "speed": 45,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "leech-life",
+        "type": "bug",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 49,
@@ -707,7 +1798,29 @@
     "special_attack": 90,
     "special_defense": 75,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "leech-life",
+        "type": "bug",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 50,
@@ -721,7 +1834,24 @@
     "special_attack": 35,
     "special_defense": 45,
     "speed": 95,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 51,
@@ -735,7 +1865,24 @@
     "special_attack": 50,
     "special_defense": 70,
     "speed": 120,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 52,
@@ -749,7 +1896,24 @@
     "special_attack": 40,
     "special_defense": 40,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 53,
@@ -763,7 +1927,24 @@
     "special_attack": 65,
     "special_defense": 65,
     "speed": 115,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 54,
@@ -777,7 +1958,39 @@
     "special_attack": 65,
     "special_defense": 50,
     "speed": 55,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      },
+      {
+        "name": "confusion",
+        "type": "psychic",
+        "power": 50
+      }
+    ]
   },
   {
     "pokemon_id": 55,
@@ -791,7 +2004,39 @@
     "special_attack": 95,
     "special_defense": 80,
     "speed": 85,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      },
+      {
+        "name": "confusion",
+        "type": "psychic",
+        "power": 50
+      }
+    ]
   },
   {
     "pokemon_id": 56,
@@ -805,7 +2050,34 @@
     "special_attack": 35,
     "special_defense": 45,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+    "moves": [
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 57,
@@ -819,7 +2091,34 @@
     "special_attack": 60,
     "special_defense": 70,
     "speed": 95,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+    "moves": [
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 58,
@@ -833,7 +2132,24 @@
     "special_attack": 70,
     "special_defense": 50,
     "speed": 60,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 59,
@@ -847,7 +2163,24 @@
     "special_attack": 100,
     "special_defense": 80,
     "speed": 95,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 60,
@@ -861,7 +2194,29 @@
     "special_attack": 40,
     "special_defense": 40,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 61,
@@ -875,7 +2230,39 @@
     "special_attack": 50,
     "special_defense": 50,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 62,
@@ -890,7 +2277,39 @@
     "special_attack": 70,
     "special_defense": 90,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 63,
@@ -904,7 +2323,24 @@
     "special_attack": 105,
     "special_defense": 55,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 64,
@@ -918,7 +2354,29 @@
     "special_attack": 120,
     "special_defense": 70,
     "speed": 105,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 65,
@@ -932,7 +2390,29 @@
     "special_attack": 135,
     "special_defense": 95,
     "speed": 120,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "dig",
+        "type": "ground",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 66,
@@ -946,7 +2426,34 @@
     "special_attack": 35,
     "special_defense": 35,
     "speed": 35,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+    "moves": [
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 67,
@@ -960,7 +2467,34 @@
     "special_attack": 50,
     "special_defense": 60,
     "speed": 45,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+    "moves": [
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 68,
@@ -974,7 +2508,34 @@
     "special_attack": 65,
     "special_defense": 85,
     "speed": 55,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+    "moves": [
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 69,
@@ -989,7 +2550,24 @@
     "special_attack": 70,
     "special_defense": 30,
     "speed": 40,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "acid",
+        "type": "poison",
+        "power": 40
+      }
+    ]
   },
   {
     "pokemon_id": 70,
@@ -1004,7 +2582,24 @@
     "special_attack": 85,
     "special_defense": 45,
     "speed": 55,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "acid",
+        "type": "poison",
+        "power": 40
+      }
+    ]
   },
   {
     "pokemon_id": 71,
@@ -1019,7 +2614,24 @@
     "special_attack": 100,
     "special_defense": 70,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "acid",
+        "type": "poison",
+        "power": 40
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      }
+    ]
   },
   {
     "pokemon_id": 72,
@@ -1034,7 +2646,34 @@
     "special_attack": 50,
     "special_defense": 100,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "acid",
+        "type": "poison",
+        "power": 40
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      }
+    ]
   },
   {
     "pokemon_id": 73,
@@ -1049,7 +2688,34 @@
     "special_attack": 80,
     "special_defense": 120,
     "speed": 100,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "acid",
+        "type": "poison",
+        "power": 40
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      }
+    ]
   },
   {
     "pokemon_id": 74,
@@ -1064,7 +2730,34 @@
     "special_attack": 30,
     "special_defense": 30,
     "speed": 20,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 75,
@@ -1079,7 +2772,34 @@
     "special_attack": 45,
     "special_defense": 45,
     "speed": 35,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 76,
@@ -1094,7 +2814,34 @@
     "special_attack": 55,
     "special_defense": 65,
     "speed": 45,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 77,
@@ -1108,7 +2855,19 @@
     "special_attack": 65,
     "special_defense": 65,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 78,
@@ -1122,7 +2881,19 @@
     "special_attack": 80,
     "special_defense": 80,
     "speed": 105,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 79,
@@ -1137,7 +2908,39 @@
     "special_attack": 40,
     "special_defense": 40,
     "speed": 15,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 80,
@@ -1152,7 +2955,44 @@
     "special_attack": 100,
     "special_defense": 80,
     "speed": 30,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 81,
@@ -1166,7 +3006,19 @@
     "special_attack": 95,
     "special_defense": 55,
     "speed": 45,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 82,
@@ -1180,7 +3032,19 @@
     "special_attack": 120,
     "special_defense": 70,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 83,
@@ -1195,7 +3059,19 @@
     "special_attack": 58,
     "special_defense": 62,
     "speed": 60,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "fly",
+        "type": "flying",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 84,
@@ -1210,7 +3086,19 @@
     "special_attack": 35,
     "special_defense": 35,
     "speed": 75,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+    "moves": [
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      },
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      }
+    ]
   },
   {
     "pokemon_id": 85,
@@ -1225,7 +3113,19 @@
     "special_attack": 60,
     "special_defense": 60,
     "speed": 110,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+    "moves": [
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      },
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      }
+    ]
   },
   {
     "pokemon_id": 86,
@@ -1239,7 +3139,24 @@
     "special_attack": 45,
     "special_defense": 70,
     "speed": 45,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 87,
@@ -1254,7 +3171,24 @@
     "special_attack": 70,
     "special_defense": 95,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 88,
@@ -1268,7 +3202,34 @@
     "special_attack": 40,
     "special_defense": 50,
     "speed": 25,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+    "moves": [
+      {
+        "name": "body-slam",
+        "type": "normal",
+        "power": 85
+      },
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "sludge",
+        "type": "poison",
+        "power": 65
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 89,
@@ -1282,7 +3243,34 @@
     "special_attack": 65,
     "special_defense": 100,
     "speed": 50,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "sludge",
+        "type": "poison",
+        "power": 65
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 90,
@@ -1296,7 +3284,24 @@
     "special_attack": 45,
     "special_defense": 25,
     "speed": 40,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 91,
@@ -1311,7 +3316,24 @@
     "special_attack": 85,
     "special_defense": 45,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 92,
@@ -1326,7 +3348,34 @@
     "special_attack": 100,
     "special_defense": 35,
     "speed": 80,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
+    "moves": [
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "dream-eater",
+        "type": "psychic",
+        "power": 100
+      },
+      {
+        "name": "rage",
+        "type": "normal",
+        "power": 20
+      },
+      {
+        "name": "lick",
+        "type": "ghost",
+        "power": 30
+      }
+    ]
   },
   {
     "pokemon_id": 93,
@@ -1341,7 +3390,34 @@
     "special_attack": 115,
     "special_defense": 55,
     "speed": 95,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+    "moves": [
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "dream-eater",
+        "type": "psychic",
+        "power": 100
+      },
+      {
+        "name": "rage",
+        "type": "normal",
+        "power": 20
+      },
+      {
+        "name": "lick",
+        "type": "ghost",
+        "power": 30
+      }
+    ]
   },
   {
     "pokemon_id": 94,
@@ -1356,7 +3432,39 @@
     "special_attack": 130,
     "special_defense": 75,
     "speed": 110,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "mega-drain",
+        "type": "grass",
+        "power": 40
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "dream-eater",
+        "type": "psychic",
+        "power": 100
+      },
+      {
+        "name": "lick",
+        "type": "ghost",
+        "power": 30
+      }
+    ]
   },
   {
     "pokemon_id": 95,
@@ -1371,7 +3479,24 @@
     "special_attack": 30,
     "special_defense": 45,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      }
+    ]
   },
   {
     "pokemon_id": 96,
@@ -1385,7 +3510,24 @@
     "special_attack": 43,
     "special_defense": 90,
     "speed": 42,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "dream-eater",
+        "type": "psychic",
+        "power": 100
+      }
+    ]
   },
   {
     "pokemon_id": 97,
@@ -1399,7 +3541,24 @@
     "special_attack": 73,
     "special_defense": 115,
     "speed": 67,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "dream-eater",
+        "type": "psychic",
+        "power": 100
+      }
+    ]
   },
   {
     "pokemon_id": 98,
@@ -1413,7 +3572,24 @@
     "special_attack": 25,
     "special_defense": 25,
     "speed": 50,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "crabhammer",
+        "type": "water",
+        "power": 100
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 99,
@@ -1427,7 +3603,24 @@
     "special_attack": 50,
     "special_defense": 50,
     "speed": 75,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "crabhammer",
+        "type": "water",
+        "power": 100
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 100,
@@ -1441,7 +3634,19 @@
     "special_attack": 55,
     "special_defense": 55,
     "speed": 100,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+    "moves": [
+      {
+        "name": "take-down",
+        "type": "normal",
+        "power": 90
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 101,
@@ -1455,7 +3660,19 @@
     "special_attack": 80,
     "special_defense": 80,
     "speed": 150,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 102,
@@ -1470,7 +3687,24 @@
     "special_attack": 60,
     "special_defense": 45,
     "speed": 40,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 103,
@@ -1485,7 +3719,24 @@
     "special_attack": 125,
     "special_defense": 75,
     "speed": 55,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 104,
@@ -1499,7 +3750,39 @@
     "special_attack": 40,
     "special_defense": 50,
     "speed": 35,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 105,
@@ -1513,7 +3796,39 @@
     "special_attack": 50,
     "special_defense": 80,
     "speed": 45,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 106,
@@ -1527,7 +3842,19 @@
     "special_attack": 35,
     "special_defense": 110,
     "speed": 87,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "high-jump-kick",
+        "type": "fighting",
+        "power": 130
+      }
+    ]
   },
   {
     "pokemon_id": 107,
@@ -1541,7 +3868,34 @@
     "special_attack": 35,
     "special_defense": 110,
     "speed": 76,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "fire-punch",
+        "type": "fire",
+        "power": 75
+      },
+      {
+        "name": "ice-punch",
+        "type": "ice",
+        "power": 75
+      },
+      {
+        "name": "thunder-punch",
+        "type": "electric",
+        "power": 75
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 108,
@@ -1555,7 +3909,44 @@
     "special_attack": 60,
     "special_defense": 75,
     "speed": 30,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 109,
@@ -1569,7 +3960,29 @@
     "special_attack": 60,
     "special_defense": 45,
     "speed": 35,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+    "moves": [
+      {
+        "name": "tackle",
+        "type": "normal",
+        "power": 40
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "sludge",
+        "type": "poison",
+        "power": 65
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 110,
@@ -1583,7 +3996,29 @@
     "special_attack": 85,
     "special_defense": 70,
     "speed": 60,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "sludge",
+        "type": "poison",
+        "power": 65
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 111,
@@ -1598,7 +4033,34 @@
     "special_attack": 30,
     "special_defense": 30,
     "speed": 25,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 112,
@@ -1613,7 +4075,49 @@
     "special_attack": 45,
     "special_defense": 45,
     "speed": 40,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 113,
@@ -1627,7 +4131,49 @@
     "special_attack": 35,
     "special_defense": 105,
     "speed": 50,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 114,
@@ -1641,7 +4187,19 @@
     "special_attack": 100,
     "special_defense": 40,
     "speed": 60,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      }
+    ]
   },
   {
     "pokemon_id": 115,
@@ -1655,7 +4213,49 @@
     "special_attack": 40,
     "special_defense": 80,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 116,
@@ -1669,7 +4269,24 @@
     "special_attack": 70,
     "special_defense": 25,
     "speed": 60,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 117,
@@ -1683,7 +4300,24 @@
     "special_attack": 95,
     "special_defense": 45,
     "speed": 85,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 118,
@@ -1697,7 +4331,29 @@
     "special_attack": 35,
     "special_defense": 50,
     "speed": 63,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "peck",
+        "type": "flying",
+        "power": 35
+      }
+    ]
   },
   {
     "pokemon_id": 119,
@@ -1711,7 +4367,29 @@
     "special_attack": 65,
     "special_defense": 80,
     "speed": 68,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "peck",
+        "type": "flying",
+        "power": 35
+      }
+    ]
   },
   {
     "pokemon_id": 120,
@@ -1725,7 +4403,34 @@
     "special_attack": 70,
     "special_defense": 55,
     "speed": 85,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 121,
@@ -1740,7 +4445,34 @@
     "special_attack": 100,
     "special_defense": 85,
     "speed": 115,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 122,
@@ -1754,7 +4486,34 @@
     "special_attack": 100,
     "special_defense": 120,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 123,
@@ -1769,7 +4528,19 @@
     "special_attack": 55,
     "special_defense": 80,
     "speed": 105,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "wing-attack",
+        "type": "flying",
+        "power": 60
+      }
+    ]
   },
   {
     "pokemon_id": 124,
@@ -1784,7 +4555,39 @@
     "special_attack": 115,
     "special_defense": 95,
     "speed": 95,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "lick",
+        "type": "ghost",
+        "power": 30
+      }
+    ]
   },
   {
     "pokemon_id": 125,
@@ -1798,7 +4601,29 @@
     "special_attack": 95,
     "special_defense": 85,
     "speed": 105,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 126,
@@ -1812,7 +4637,34 @@
     "special_attack": 100,
     "special_defense": 85,
     "speed": 93,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "smog",
+        "type": "poison",
+        "power": 30
+      }
+    ]
   },
   {
     "pokemon_id": 127,
@@ -1826,7 +4678,19 @@
     "special_attack": 55,
     "special_defense": 70,
     "speed": 85,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 128,
@@ -1840,7 +4704,34 @@
     "special_attack": 40,
     "special_defense": 70,
     "speed": 110,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 129,
@@ -1854,7 +4745,14 @@
     "special_attack": 15,
     "special_defense": 20,
     "speed": 80,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+    "moves": [
+      {
+        "name": "tackle",
+        "type": "normal",
+        "power": 40
+      }
+    ]
   },
   {
     "pokemon_id": 130,
@@ -1869,7 +4767,34 @@
     "special_attack": 60,
     "special_defense": 100,
     "speed": 81,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 131,
@@ -1884,7 +4809,39 @@
     "special_attack": 85,
     "special_defense": 95,
     "speed": 60,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      }
+    ]
   },
   {
     "pokemon_id": 132,
@@ -1898,7 +4855,14 @@
     "special_attack": 48,
     "special_defense": 48,
     "speed": 48,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+    "moves": [
+      {
+        "name": "struggle",
+        "type": "normal",
+        "power": 50
+      }
+    ]
   },
   {
     "pokemon_id": 133,
@@ -1912,7 +4876,14 @@
     "special_attack": 45,
     "special_defense": 65,
     "speed": 55,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+    "moves": [
+      {
+        "name": "skull-bash",
+        "type": "normal",
+        "power": 130
+      }
+    ]
   },
   {
     "pokemon_id": 134,
@@ -1926,7 +4897,24 @@
     "special_attack": 110,
     "special_defense": 95,
     "speed": 65,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 135,
@@ -1940,7 +4928,29 @@
     "special_attack": 110,
     "special_defense": 95,
     "speed": 130,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+    "moves": [
+      {
+        "name": "double-kick",
+        "type": "fighting",
+        "power": 30
+      },
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "pin-missile",
+        "type": "bug",
+        "power": 25
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 136,
@@ -1954,7 +4964,24 @@
     "special_attack": 95,
     "special_defense": 110,
     "speed": 65,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "smog",
+        "type": "poison",
+        "power": 30
+      }
+    ]
   },
   {
     "pokemon_id": 137,
@@ -1968,7 +4995,29 @@
     "special_attack": 85,
     "special_defense": 75,
     "speed": 40,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 138,
@@ -1983,7 +5032,24 @@
     "special_attack": 90,
     "special_defense": 55,
     "speed": 35,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 139,
@@ -1998,7 +5064,29 @@
     "special_attack": 115,
     "special_defense": 70,
     "speed": 55,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      }
+    ]
   },
   {
     "pokemon_id": 140,
@@ -2013,7 +5101,29 @@
     "special_attack": 55,
     "special_defense": 45,
     "speed": 55,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
+    "moves": [
+      {
+        "name": "double-edge",
+        "type": "normal",
+        "power": 120
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "absorb",
+        "type": "grass",
+        "power": 20
+      }
+    ]
   },
   {
     "pokemon_id": 141,
@@ -2028,7 +5138,34 @@
     "special_attack": 65,
     "special_defense": 70,
     "speed": 80,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "hydro-pump",
+        "type": "water",
+        "power": 110
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "absorb",
+        "type": "grass",
+        "power": 20
+      }
+    ]
   },
   {
     "pokemon_id": 142,
@@ -2043,7 +5180,24 @@
     "special_attack": 60,
     "special_defense": 75,
     "speed": 130,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 143,
@@ -2057,7 +5211,59 @@
     "special_attack": 65,
     "special_defense": 110,
     "speed": 30,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   },
   {
     "pokemon_id": 144,
@@ -2072,7 +5278,29 @@
     "special_attack": 95,
     "special_defense": 125,
     "speed": 85,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 145,
@@ -2087,7 +5315,24 @@
     "special_attack": 125,
     "special_defense": 90,
     "speed": 100,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 146,
@@ -2102,7 +5347,24 @@
     "special_attack": 125,
     "special_defense": 85,
     "speed": 90,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 147,
@@ -2116,7 +5378,34 @@
     "special_attack": 50,
     "special_defense": 50,
     "speed": 50,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 148,
@@ -2130,7 +5419,34 @@
     "special_attack": 70,
     "special_defense": 70,
     "speed": 70,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 149,
@@ -2145,7 +5461,34 @@
     "special_attack": 100,
     "special_defense": 100,
     "speed": 80,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 150,
@@ -2159,7 +5502,49 @@
     "special_attack": 154,
     "special_defense": 90,
     "speed": 130,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "bubble-beam",
+        "type": "water",
+        "power": 65
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "psychic",
+        "type": "psychic",
+        "power": 90
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      }
+    ]
   },
   {
     "pokemon_id": 151,
@@ -2173,6 +5558,63 @@
     "special_attack": 100,
     "special_defense": 100,
     "speed": 100,
-    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"
+    "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+    "moves": [
+      {
+        "name": "hyper-beam",
+        "type": "normal",
+        "power": 150
+      },
+      {
+        "name": "sky-attack",
+        "type": "flying",
+        "power": 140
+      },
+      {
+        "name": "surf",
+        "type": "water",
+        "power": 90
+      },
+      {
+        "name": "blizzard",
+        "type": "ice",
+        "power": 110
+      },
+      {
+        "name": "submission",
+        "type": "fighting",
+        "power": 80
+      },
+      {
+        "name": "solar-beam",
+        "type": "grass",
+        "power": 120
+      },
+      {
+        "name": "thunder",
+        "type": "electric",
+        "power": 110
+      },
+      {
+        "name": "earthquake",
+        "type": "ground",
+        "power": 100
+      },
+      {
+        "name": "dream-eater",
+        "type": "psychic",
+        "power": 100
+      },
+      {
+        "name": "fire-blast",
+        "type": "fire",
+        "power": 110
+      },
+      {
+        "name": "rock-slide",
+        "type": "rock",
+        "power": 75
+      }
+    ]
   }
 ]
