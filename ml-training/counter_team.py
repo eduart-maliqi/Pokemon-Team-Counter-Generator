@@ -41,12 +41,16 @@ def load_model_and_data() -> tuple:
 
 def calculate_best_type_advantage(
     attacking_pokemon: dict, defending_pokemon: dict, type_effectiveness_chart: dict) -> float:
-    """Bester Typ-Multiplikator, den das angreifende Pokémon erreichen kann."""
+    """
+    Bester Typ-Multiplikator ueber die Typen der echten Attacken (inkl. Coverage).
+    Muss dieselbe Logik sein wie in build_features.py, sonst passen die Features
+    der API nicht zu denen des Trainings.
+    """
     return max(
         calculate_type_effectiveness(
-            move_type, defending_pokemon["types"], type_effectiveness_chart
+            move["type"], defending_pokemon["types"], type_effectiveness_chart
         )
-        for move_type in attacking_pokemon["types"]
+        for move in attacking_pokemon["moves"]
     )
 
 

@@ -54,14 +54,16 @@ def calculate_best_type_advantage(
     """
     Der beste Typ-Multiplikator, den das angreifende Pokémon erreichen kann.
 
-    Es hat pro eigenem Typ eine Attacke, also zaehlt die wirksamste davon.
-    Glurak (Feuer/Flug) gegen Bisaflor (Pflanze/Gift): Feuer 2.0, Flug 2.0 -> 2.0.
+    Zaehlt jetzt ueber die Typen der ECHTEN Attacken, nicht mehr nur ueber die
+    eigenen Typen. So zaehlt auch Coverage: Relaxo (Normal) mit Erdbeben bekommt
+    gegen Gestein/Boden den Boden-Vorteil, den es mit reinen Normal-Attacken nie
+    haette.
     """
     return max(
         calculate_type_effectiveness(
-            move_type, defending_pokemon["types"], type_effectiveness_chart
+            move["type"], defending_pokemon["types"], type_effectiveness_chart
         )
-        for move_type in attacking_pokemon["types"]
+        for move in attacking_pokemon["moves"]
     )
 
 

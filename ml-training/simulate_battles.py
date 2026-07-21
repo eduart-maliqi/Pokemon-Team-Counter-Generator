@@ -16,10 +16,9 @@ from pathlib import Path
 import pandas as pd
 
 DATA_DIRECTORY = Path(__file__).resolve().parent.parent / "data"
-BATTLES_PER_PAIRING = 20  
+BATTLES_PER_PAIRING = 20
 POKEMON_LEVEL = 50
-MOVE_BASE_POWER = 80  # jedes Pokémon hat pro eigenem Typ eine Attacke dieser Staerke
-STAB = 1.5  
+STAB = 1.5
 CRIT_CHANCE = 1 / 16  
 CRIT_MULTIPLIER = 2.0
 MAX_TURNS = 300  # Notbremse gegen Paarungen, die sich gegenseitig kaum schaden
@@ -76,22 +75,24 @@ def calculate_type_effectiveness(
 def calculate_base_damage(
     attacking_pokemon: dict,
     defending_pokemon: dict,
-    move_type: str,
+    move: dict,
     type_effectiveness_chart: dict,
 ) -> float:
     """
-    Schadensformel der Spiele, OHNE Zufall
+    Schadensformel der Spiele, OHNE Zufall. move ist eine echte Attacke mit
+    {"name", "type", "power"} - die Staerke kommt jetzt aus der Attacke selbst,
+    nicht mehr aus einer festen Konstante.
     """
+    move_type = move["type"]
     type_multiplier = calculate_type_effectiveness(
         move_type, defending_pokemon["types"], type_effectiveness_chart
     )
 
-   
     if type_multiplier == 0.0:
         return 0.0
 
     # In Gen 1 entscheidet allein der Typ der Attacke, ob sie physisch oder
-    
+    # speziell ist - und damit, welcher Angriffswert zaehlt.
     if move_type in PHYSICAL_TYPES:
         attack_value = calculate_stat_at_level(attacking_pokemon["attack"])
         defense_value = calculate_stat_at_level(defending_pokemon["defense"])
@@ -100,7 +101,7 @@ def calculate_base_damage(
         defense_value = calculate_stat_at_level(defending_pokemon["special_defense"])
 
     base_damage = (
-        (2 * POKEMON_LEVEL / 5 + 2) * MOVE_BASE_POWER * attack_value / defense_value / 50
+        (2 * POKEMON_LEVEL / 5 + 2) * move["power"] * attack_value / defense_value / 50
     ) + 2
 
     if move_type in attacking_pokemon["types"]:
@@ -112,7 +113,7 @@ def calculate_base_damage(
 def calculate_damage(
     attacking_pokemon: dict,
     defending_pokemon: dict,
-    move_type: str,
+    move: dict,
     type_effectiveness_chart: dict,
     random_generator: random.Random,
 ) -> int:
@@ -126,7 +127,7 @@ def calculate_damage(
     haette - Speed ist ohnehin schon ein Feature des Modells.
     """
     base_damage = calculate_base_damage(
-        attacking_pokemon, defending_pokemon, move_type, type_effectiveness_chart
+        attacking_pokemon, defending_pokemon, move, type_effectiveness_chart
     )
 
     if base_damage == 0.0:
@@ -141,22 +142,23 @@ def calculate_damage(
     return max(1, int(base_damage))
 
 
-def choose_best_move_type(
+def choose_best_move(
     attacking_pokemon: dict, defending_pokemon: dict, type_effectiveness_chart: dict
-) -> str:
+) -> dict:
     """
-    Jedes Pokémon hat pro eigenem Typ eine Attacke und waehlt die, die tatsaechlich
-    am meisten Schaden macht.
+    Waehlt aus den ECHTEN Attacken des Pokémon die, die gegen diesen Gegner am
+    meisten Schaden macht - genau das, was ein Spieler auch tun wuerde.
 
-    Bewusst nach SCHADEN und nicht nur nach Typ-Effektivitaet: Gengar (Geist/Gift)
-    hat gegen Alakazam mit Geist zwar den besseren Multiplikator (2x statt 1x), aber
-    Geist ist in Gen 1 physisch und Gengars Angriff ist mies - seine speziell
-    berechnete Gift-Attacke macht aus dem starken Spezial-Angriff mehr Schaden.
+    Bewusst nach tatsaechlichem SCHADEN und nicht nur nach Typ-Effektivitaet oder
+    Staerke: Beruecksichtigt Attacken-Staerke, STAB, Typ-Vorteil und ob die
+    Attacke ueber den physischen oder speziellen Angriff des Pokémon laeuft.
+    So nimmt Relaxo gegen Gestein/Boden z.B. sein Erdbeben, gegen andere seinen
+    staerksten Normal-Treffer.
     """
     return max(
-        attacking_pokemon["types"],
-        key=lambda move_type: calculate_base_damage(
-            attacking_pokemon, defending_pokemon, move_type, type_effectiveness_chart
+        attacking_pokemon["moves"],
+        key=lambda move: calculate_base_damage(
+            attacking_pokemon, defending_pokemon, move, type_effectiveness_chart
         ),
     )
 
@@ -178,8 +180,8 @@ def simulate_single_battle(
     first_remaining_hp = first_maximum_hp
     second_remaining_hp = second_maximum_hp
 
-    first_move_type = choose_best_move_type(first_pokemon, second_pokemon, type_effectiveness_chart)
-    second_move_type = choose_best_move_type(second_pokemon, first_pokemon, type_effectiveness_chart)
+    first_move = choose_best_move(first_pokemon, second_pokemon, type_effectiveness_chart)
+    second_move = choose_best_move(second_pokemon, first_pokemon, type_effectiveness_chart)
 
     # Bei gleichem Speed entscheidet der Zufall, wer beginnt.
     if first_pokemon["speed"] > second_pokemon["speed"]:
@@ -192,28 +194,28 @@ def simulate_single_battle(
     for _ in range(MAX_TURNS):
         if first_pokemon_attacks_first:
             second_remaining_hp -= calculate_damage(
-                first_pokemon, second_pokemon, first_move_type,
+                first_pokemon, second_pokemon, first_move,
                 type_effectiveness_chart, random_generator,
             )
             if second_remaining_hp <= 0:
                 return True
 
             first_remaining_hp -= calculate_damage(
-                second_pokemon, first_pokemon, second_move_type,
+                second_pokemon, first_pokemon, second_move,
                 type_effectiveness_chart, random_generator,
             )
             if first_remaining_hp <= 0:
                 return False
         else:
             first_remaining_hp -= calculate_damage(
-                second_pokemon, first_pokemon, second_move_type,
+                second_pokemon, first_pokemon, second_move,
                 type_effectiveness_chart, random_generator,
             )
             if first_remaining_hp <= 0:
                 return False
 
             second_remaining_hp -= calculate_damage(
-                first_pokemon, second_pokemon, first_move_type,
+                first_pokemon, second_pokemon, first_move,
                 type_effectiveness_chart, random_generator,
             )
             if second_remaining_hp <= 0:
